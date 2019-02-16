@@ -130,7 +130,7 @@ class Images extends Component {
     }
 
     return(
-        <div className="grid-container">
+        <div className="grid-container image-grid">
           {[1, 3, 4].includes(imagesToShow.length)  && this.renderOne()}
           {imagesToShow.length >= 2 && imagesToShow.length != 4 && this.renderTwo()}
           {imagesToShow.length >= 4 && this.renderThree()}

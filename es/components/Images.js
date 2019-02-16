@@ -182,7 +182,7 @@ var Images = (_temp = _class = function (_Component) {
 
     return React.createElement(
       'div',
-      { className: 'grid-container' },
+      { className: 'grid-container image-grid' },
       [1, 3, 4].includes(imagesToShow.length) && this.renderOne(),
       imagesToShow.length >= 2 && imagesToShow.length != 4 && this.renderTwo(),
       imagesToShow.length >= 4 && this.renderThree(),

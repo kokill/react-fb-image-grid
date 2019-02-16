@@ -9,6 +9,16 @@
   width: 100%;
   padding: 10px;
 }
+.image-grid .container {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100% !important;
+}
+.image-grid .container *{
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
 .border {
   border: 2px solid white;
   border-radius: 6px;
