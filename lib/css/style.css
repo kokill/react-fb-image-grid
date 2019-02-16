@@ -9,12 +9,13 @@
   width: 100%;
   padding: 10px;
 }
-
 .border {
   border: 2px solid white;
   border-radius: 6px;
 }
-
+.width-33 {
+  width: 33.33333333%;
+}
 .background {
   background-size: cover !important;
   background-position: center !important;

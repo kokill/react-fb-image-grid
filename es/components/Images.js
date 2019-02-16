@@ -7,7 +7,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 import React, { Component } from 'react';
-import { Image, Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 import Modal from './Modal';
 import PropTypes from 'prop-types';
 
@@ -114,17 +114,17 @@ var Images = (_temp = _class = function (_Component) {
         null,
         React.createElement(
           Col,
-          { xs: 6, md: 4, className: 'border height-three background', onClick: this.openModal.bind(this, conditionalRender ? 1 : 2), style: { background: 'url(' + (conditionalRender ? images[1] : images[2]) + ')' } },
+          { xs: 6, className: 'width-33 border height-three background', onClick: this.openModal.bind(this, conditionalRender ? 1 : 2), style: { background: 'url(' + (conditionalRender ? images[1] : images[2]) + ')' } },
           this.renderOverlay(conditionalRender ? 1 : 2)
         ),
         React.createElement(
           Col,
-          { xs: 6, md: 4, className: 'border height-three background', onClick: this.openModal.bind(this, conditionalRender ? 2 : 3), style: { background: 'url(' + (conditionalRender ? images[2] : images[3]) + ')' } },
+          { xs: 6, className: 'width-33 border height-three background', onClick: this.openModal.bind(this, conditionalRender ? 2 : 3), style: { background: 'url(' + (conditionalRender ? images[2] : images[3]) + ')' } },
           this.renderOverlay(conditionalRender ? 2 : 3)
         ),
         React.createElement(
           Col,
-          { xs: 6, md: 4, className: 'border height-three background', onClick: this.openModal.bind(this, conditionalRender ? 3 : 4), style: { background: 'url(' + (conditionalRender ? images[3] : images[4]) + ')' } },
+          { xs: 6, className: 'width-33 border height-three background', onClick: this.openModal.bind(this, conditionalRender ? 3 : 4), style: { background: 'url(' + (conditionalRender ? images[3] : images[4]) + ')' } },
           overlay
         )
       )

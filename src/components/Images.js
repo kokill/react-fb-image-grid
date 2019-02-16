@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 import Modal from './Modal'
 import PropTypes from 'prop-types';
 
@@ -84,13 +84,13 @@ class Images extends Component {
 
     return <Grid>
       <Row>
-        <Col xs={6} md={4} className="border height-three background" onClick={this.openModal.bind(this, conditionalRender ? 1 : 2)} style={{background: `url(${conditionalRender ? images[1] : images[2]})`}}>
+        <Col xs={6} className="width-33 border height-three background" onClick={this.openModal.bind(this, conditionalRender ? 1 : 2)} style={{background: `url(${conditionalRender ? images[1] : images[2]})`}}>
           {this.renderOverlay(conditionalRender ? 1 : 2)}
         </Col>
-        <Col xs={6} md={4} className="border height-three background" onClick={this.openModal.bind(this, conditionalRender ? 2 : 3)} style={{background: `url(${conditionalRender ? images[2] : images[3]})`}}>
+        <Col xs={6} className="width-33 border height-three background" onClick={this.openModal.bind(this, conditionalRender ? 2 : 3)} style={{background: `url(${conditionalRender ? images[2] : images[3]})`}}>
           {this.renderOverlay(conditionalRender ? 2 : 3)}
         </Col>
-        <Col xs={6} md={4} className="border height-three background" onClick={this.openModal.bind(this, conditionalRender ? 3 : 4)} style={{background: `url(${conditionalRender ? images[3] : images[4]})`}}>
+        <Col xs={6} className="width-33 border height-three background" onClick={this.openModal.bind(this, conditionalRender ? 3 : 4)} style={{background: `url(${conditionalRender ? images[3] : images[4]})`}}>
           {overlay}
         </Col>
       </Row>
